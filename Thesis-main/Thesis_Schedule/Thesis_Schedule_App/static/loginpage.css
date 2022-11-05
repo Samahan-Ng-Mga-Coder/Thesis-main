@@ -1,27 +1,12 @@
 body{
     background-repeat: no-repeat;
     position: relative;
-    /*place-content: center;*/
     background-image:url(images/bg.png);
     background-size: cover;
-  /*  background-position: center;*/
     background-size:100% 100vh;
     font-family: monospace;
 }
-/*@mixin bg($url) {
-  background-attachment: fixed;
-  background-image: url(images/PERSON.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-@mixin col($c, $m: 0px) {
-  $margin: calc(((12 / #{$c}) - 1) * #{$m});
-  width: calc(((100% - #{$margin}) / 12) * #{$c});
-  &:not(:last-child) {
-    margin: 0 #{$m} 0 0;
-  }*/
-}
+
 * {
   box-sizing: border-box;
   /*box-position: center;*/
@@ -32,6 +17,7 @@ body{
     box-sizing: inherit;
   }
 }
+
 html, body {
   font: 400 14px 'Didactic Gothic', sans-serif;
   height: 100%;
@@ -40,6 +26,7 @@ html, body {
   padding: 0;
   width: 100%;
 }
+
 a {
   color: #36065B;
   text-decoration: none;
@@ -47,6 +34,7 @@ a {
     text-decoration: underline;
   }
 }
+
 label {
   display: block;
 }
@@ -64,9 +52,6 @@ input {
   &:focus {
     border-bottom-color: #f3e2ff;
   }
-  /*&:hover {
-    border-bottom-color: #000;
-  }*/
 }
 
 .row {
@@ -82,7 +67,7 @@ input {
   border-radius: none;
   float: left;
   margin: 0;
-  padding: 30px 50px;
+  padding-top: 200px;
   position: center;
   &.col-6 {
     @include col(6);
@@ -98,7 +83,6 @@ input {
 .login-box {
   blackface-visibility: hidden;
   background: #fff;
- /* background: rgba(255, 255, 255, 0.05);*/
   border-radius: 10px;
   margin-left: 50%;
   position: absolute;
@@ -113,8 +97,6 @@ input {
    background-image: url(images/logo2.png);
    background-position: center;
    margin: 20px;
-   /*padding-right: 20px;
-   border-right: 3px solid rgba(213, 162, 249);*/
 
   background-repeat: no-repeat;
      width: 700px;
@@ -230,9 +212,8 @@ h1 {
   margin-bottom: 60px;
 }
 
-}
+
 .lost-passwd {
-  /*margin-top: 50px;*/
   margin: 30px 0 0;
 }
 

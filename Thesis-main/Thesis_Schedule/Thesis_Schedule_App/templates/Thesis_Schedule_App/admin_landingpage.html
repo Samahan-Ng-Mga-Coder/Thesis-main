@@ -9,11 +9,70 @@
     <script src="https://kit.fontawesome.com/eb44be992a.js" crossorigin="anonymous"></script>
 
 </head>
-{% load static %}
-<link rel = "stylesheet" href="{% static 'admin_landingpageCSS.css' %}">
+    {% load static %}
+    <link rel = "stylesheet" href="{% static 'admin_landingpageCSS.css' %}">
 <body >
+<div class="container">
+    <h2>LOGIN</h2>
+        <form>
+            <div class="inputBox">
+              <input type="text" required="required">
+              <span><i class="fa-solid fa-user"></i> USERNAME</span>
+            </div>
 
-	<button>FACULTY LOADING</button>
+            <div class="inputBox">
+              <input type="text" required="required">
+              <span><i class="fa-solid fa-lock"></i> PASSWORD</span>
+            </div>
+            <div class="inputBox">
+              <input type="submit" required="required">
+            </div>
+        </form>
+</div>
+
+{% load static %}
+<link rel = "stylesheet" href="{% static 'loginpage.css' %}">
+<body >
+ <div class="container row login-box">
+  <div class="col login-title">
+
+  </div>
+  <div class="col login-form">
+
+    <form action="" method="POST">
+
+        <label for="login" class="login">
+        <input id="id" type="text" placeholder="USER ID" />
+        </label>
+
+      <label for="login" class="login">
+        <input id="login" type="text" placeholder="USERNAME" />
+      </label>
+
+      <label for="passwd" classs="passwd">
+        <input id="passwd" type="password" placeholder="PASSWORD" />
+      </label>
+
+      <button class="button" type="submit"><i class="fa-solid fa-right-to-bracket"></i>  SIGN IN</button>
+
+    </form>
+
+    <div class="lost-passwd">
+      <a href="#">Forgot password?</a>
+    </div>
+      <form>
+
+	<div class="input-container">
+		<input type="text" id="username" autocomplete="off" placeholder="Enter your username" required class="text-input">
+	<label for="username" class="label"><i class="fa-regular fa-user"></i> USERNAME</label>
+	</div>
+      </form>
+
+  </div>
+</div>
+</body>
+
+</html>
 
 </body>
 
