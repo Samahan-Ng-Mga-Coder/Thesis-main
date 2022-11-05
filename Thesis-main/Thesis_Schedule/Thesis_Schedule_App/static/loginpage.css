@@ -22,15 +22,16 @@ body{
 }
 * {
   box-sizing: border-box;
+  /*box-position: center;*/
   color: #0c0d1f;
-  font: 400 13px 'Didactic Gothic', sans-serif;
   letter-spacing: 3px;
+  font: 400 13px 'Didactic Gothic', sans-serif;
   &::after, &::before {
     box-sizing: inherit;
   }
 }
 html, body {
-  font: 400 15px 'Didactic Gothic', sans-serif;
+  font: 400 14px 'Didactic Gothic', sans-serif;
   height: 100%;
   margin: 0;
   overflow: hidden;
@@ -51,7 +52,7 @@ label {
 input {
   background: transparent;
   border: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(213, 162, 249);
   display: block;
   outline: none;
   padding: 0 8px 8px 30px;
@@ -59,7 +60,7 @@ input {
   transition: all 0.2s ease-in-out;
   width: 100%;
   &:focus {
-    border-bottom-color: #F3E2FF;
+    border-bottom-color: #f3e2ff;
   }
 }
 
@@ -73,12 +74,11 @@ input {
 }
 
 .col {
-  border-radius: inherit;
+  border-radius: none;
   float: left;
   margin: 0;
   padding: 30px 50px;
   position: relative;
-
   &.col-6 {
     @include col(6);
   }
@@ -92,7 +92,6 @@ box-shadow: -20px 20px 20px rgba(0,0,0,0.3);
 .login-box {
   blackface-visibility: hidden;
   background: #fff;
-
 
  /* background: rgba(255, 255, 255, 0.05);*/
   border-radius: 10px;
@@ -111,6 +110,10 @@ box-shadow: -20px 20px 20px rgba(0,0,0,0.3);
 .login-title {
    background-image: url(images/logo2.png);
    background-position: center;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   /*padding-right: 20px;
+   border-right: 3px solid rgba(213, 162, 249);*/
 
   background-repeat: no-repeat;
      width: 450px;
