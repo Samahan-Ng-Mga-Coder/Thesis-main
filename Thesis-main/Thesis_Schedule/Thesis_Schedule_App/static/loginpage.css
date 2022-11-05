@@ -55,12 +55,15 @@ input {
   border-bottom: 1px solid rgba(213, 162, 249);
   display: block;
   outline: none;
-  padding: 0 8px 8px 30px;
-  position: relative;
+  padding: 0 8px 8px 5px;
+  position: center;
   transition: all 0.2s ease-in-out;
-  width: 100%;
+  width: 80%;
   &:focus {
     border-bottom-color: #f3e2ff;
+  }
+  &:hover {
+    border-bottom-color: #000;
   }
 }
 
@@ -86,37 +89,33 @@ input {
 
 .container
 {
-box-shadow: -20px 20px 20px rgba(0,0,0,0.3);
+/*box-shadow: -15px 15px 20px rgba(0,0,0,0.3);*/
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .login-box {
   blackface-visibility: hidden;
   background: #fff;
-
  /* background: rgba(255, 255, 255, 0.05);*/
   border-radius: 10px;
-  /*box-shadow:
-    0 0 20px 0 rgba(0, 0, 0, 0.4),
-    0 0 0 2000px rgba(#0c0d1f, 0.3);*/
-  left: 50%;
+  margin-left: 50%;
   position: absolute;
   top: 50%;
   transform:
     translate3d(-50%, -50%, 0)
     scale(1, 1);
-  width: 100%;
+  width: 120%;
   max-width: 1000px;
 }
 .login-title {
    background-image: url(images/logo2.png);
    background-position: center;
-   margin-top: 20px;
-   margin-bottom: 20px;
+   margin: 20px;
    /*padding-right: 20px;
    border-right: 3px solid rgba(213, 162, 249);*/
 
   background-repeat: no-repeat;
-     width: 450px;
+     width: 700px;
      height: 500px;
     background-size: contain;
 }
@@ -223,7 +222,7 @@ h1 {
   cursor: pointer;
   display: block;
   padding: 12px;
-  width: 100%;
+  width: 80%;
   border-radius: 3px;
   margin-top: 40px;
   margin-bottom: 60px;
