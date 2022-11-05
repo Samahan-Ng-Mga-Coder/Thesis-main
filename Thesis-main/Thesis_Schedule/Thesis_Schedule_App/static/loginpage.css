@@ -6,6 +6,20 @@ body{
   /*  background-position: center;*/
     background-size:100% 100vh;
 }
+/*@mixin bg($url) {
+  background-attachment: fixed;
+  background-image: url(images/PERSON.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@mixin col($c, $m: 0px) {
+  $margin: calc(((12 / #{$c}) - 1) * #{$m});
+  width: calc(((100% - #{$margin}) / 12) * #{$c});
+  &:not(:last-child) {
+    margin: 0 #{$m} 0 0;
+  }*/
+}
 * {
   box-sizing: border-box;
   color: #0c0d1f;
