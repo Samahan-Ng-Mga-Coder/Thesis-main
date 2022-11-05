@@ -24,7 +24,6 @@
     <form action="" method="POST">
 
         <label for="login" class="login">
-            <i class="fa-regular fa-user"></i>
         <input id="id" type="text" placeholder="USER ID" />
         </label>
 
@@ -36,13 +35,20 @@
         <input id="passwd" type="password" placeholder="PASSWORD" />
       </label>
 
-      <button class="button" type="submit">SIGN IN</button>
+      <button class="button" type="submit"><i class="fa-solid fa-right-to-bracket"></i>  SIGN IN</button>
 
     </form>
 
     <div class="lost-passwd">
       <a href="#">Forgot password?</a>
     </div>
+      <form>
+
+	<div class="input-container">
+		<input type="text" id="username" autocomplete="off" placeholder="Enter your username" required class="text-input">
+	<label for="username" class="label"><i class="fa-regular fa-user"></i> USERNAME</label>
+	</div>
+      </form>
 
   </div>
 </div>
