@@ -78,17 +78,20 @@ input {
     @include col(6);
   }
 }
-.container { }
+.container
+{
+box-shadow: -30px 30px 20px rgba(0,0,0,0.3);
+}
 .login-box {
   blackface-visibility: hidden;
   background: #fff;
 
 
  /* background: rgba(255, 255, 255, 0.05);*/
-  border-radius: 1px;
-  box-shadow:
+  border-radius: 10px;
+  /*box-shadow:
     0 0 20px 0 rgba(0, 0, 0, 0.4),
-    0 0 0 2000px rgba(#0c0d1f, 0.3);
+    0 0 0 2000px rgba(#0c0d1f, 0.3);*/
   left: 50%;
   position: absolute;
   top: 50%;
@@ -121,6 +124,7 @@ h1 {
 .login-form {
   background: #fff
   text-align: center;
+  border-radius: 20px;
   width: 30%;
   > form {
     > *:not(:last-child) {
@@ -202,8 +206,10 @@ h1 {
   &::after {
     content: '\f084';
   }
+
 }
-.button {
+.button:before
+{
   border: transparent;
   background: #7C55FF;
   color: #fff;
@@ -211,7 +217,21 @@ h1 {
   display: block;
   padding: 12px;
   width: 100%;
-  border-radius: 8px;
+  border-radius: 3px;
+
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  /*width: 90%;
+  height: 50px;*/
+  background: rgba(0,0,0,0.3);
+  transform-origin: left;
+  transform: skewY(5deg);
+  z-index: -1;
+  filter: blur(5px);
+}
+
 }
 .lost-passwd {
   margin: 30px 0 0;
