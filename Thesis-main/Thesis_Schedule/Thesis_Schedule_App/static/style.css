@@ -1,7 +1,7 @@
 body{
     background-repeat: no-repeat;
     position: relative;
-    background-image:url(images/loginBg2.png);
+    background-image:url(images/bg.png);
     background-size: cover;
   /*  background-position: center;*/
     background-size:100% 100vh;
@@ -208,28 +208,16 @@ h1 {
   }
 
 }
-.button:before
+.button:befores
 {
-  border: transparent;
+  border: none;
   background: #7C55FF;
   color: #fff;
   cursor: pointer;
   display: block;
   padding: 12px;
   width: 100%;
-  border-radius: 3px;
-
-  content: '';
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  /*width: 90%;
-  height: 50px;*/
-  background: rgba(0,0,0,0.3);
-  transform-origin: left;
-  transform: skewY(5deg);
-  z-index: -1;
-  filter: blur(5px);
+  /*border-radius: 3px;*/
 }
 
 }
