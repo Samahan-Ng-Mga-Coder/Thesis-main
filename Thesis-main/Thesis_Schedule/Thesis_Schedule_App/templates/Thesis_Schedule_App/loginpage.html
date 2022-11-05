@@ -9,7 +9,7 @@
 
 </head>
 {% load static %}
-<link rel = "stylesheet" href="{% static 'style.css' %}">
+<link rel = "stylesheet" href="{% static 'loginpage.css' %}">
 <body >
  <div class="container row login-box">
   <div class="col login-title">
@@ -21,22 +21,27 @@
     </div>
 
     <form action="" method="POST">
+
         <label for="login" class="login">
-        <input id="id" type="text" placeholder="Student Id" />
+        <input id="id" type="text" placeholder="USER ID" />
       </label>
-      <label for="login" class="login">
-        <input id="login" type="text" placeholder="Username" />
+
+      <label for="login" class="login">S
+        <input id="login" type="text" placeholder="USERNAME" />
       </label>
-      <label for="passwd" class="passwd">
-        <input id="passwd" type="password" placeholder="Password" />
+
+      <label for="passwd" classs="passwd">
+        <input id="passwd" type="password" placeholder="PASSWORD" />
       </label>
-      <button class="button" type="submit">Sign In</button>
+
+      <button class="button" type="submit">SIGN IN</button>
+
     </form>
+
     <div class="lost-passwd">
-
       <a href="#">Forgot password?</a>
-
     </div>
+
   </div>
 </div>
 </body>

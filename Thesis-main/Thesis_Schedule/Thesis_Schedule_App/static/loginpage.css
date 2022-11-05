@@ -1,29 +1,16 @@
 body{
     background-repeat: no-repeat;
     position: relative;
-    background-image:url(images/loginBg2.png);
+    background-image:url(images/bg.png);
     background-size: cover;
   /*  background-position: center;*/
     background-size:100% 100vh;
 }
-/*@mixin bg($url) {
-  background-attachment: fixed;
-  background-image: url(images/PERSON.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-@mixin col($c, $m: 0px) {
-  $margin: calc(((12 / #{$c}) - 1) * #{$m});
-  width: calc(((100% - #{$margin}) / 12) * #{$c});
-  &:not(:last-child) {
-    margin: 0 #{$m} 0 0;
-  }*/
-}
 * {
   box-sizing: border-box;
   color: #0c0d1f;
-  font: 400 15px 'Didactic Gothic', sans-serif;
+  font: 400 13px 'Didactic Gothic', sans-serif;
+  letter-spacing: 3px;
   &::after, &::before {
     box-sizing: inherit;
   }
@@ -46,6 +33,7 @@ a {
 label {
   display: block;
 }
+
 input {
   background: transparent;
   border: none;
@@ -57,9 +45,10 @@ input {
   transition: all 0.2s ease-in-out;
   width: 100%;
   &:focus {
-    border-bottom-color: #0c0d1f;
+    border-bottom-color: #F3E2FF;
   }
 }
+
 .row {
   &::after {
     clear: both;
@@ -68,20 +57,24 @@ input {
     width: 100%;
   }
 }
+
 .col {
   border-radius: inherit;
   float: left;
   margin: 0;
   padding: 30px 50px;
   position: relative;
+
   &.col-6 {
     @include col(6);
   }
 }
+
 .container
 {
-box-shadow: -30px 30px 20px rgba(0,0,0,0.3);
+box-shadow: -20px 20px 20px rgba(0,0,0,0.3);
 }
+
 .login-box {
   blackface-visibility: hidden;
   background: #fff;
@@ -109,11 +102,8 @@ box-shadow: -30px 30px 20px rgba(0,0,0,0.3);
      width: 450px;
      height: 500px;
     background-size: contain;
-
-
-/*  text-shadow: 0 0 15px rgba(255, 255, 255, 1);
-  width: 100%;*/
 }
+
 h1 {
   font: 400 48px 'Lobster', cursive;
   text-transform: uppercase;
@@ -208,7 +198,7 @@ h1 {
   }
 
 }
-.button:before
+.button
 {
   border: transparent;
   background: #7C55FF;
@@ -218,21 +208,12 @@ h1 {
   padding: 12px;
   width: 100%;
   border-radius: 3px;
-
-  content: '';
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  /*width: 90%;
-  height: 50px;*/
-  background: rgba(0,0,0,0.3);
-  transform-origin: left;
-  transform: skewY(5deg);
-  z-index: -1;
-  filter: blur(5px);
+  margin-top: 40px;
+  margin-bottom: 60px;
 }
 
 }
 .lost-passwd {
+  /*margin-top: 50px;*/
   margin: 30px 0 0;
 }
