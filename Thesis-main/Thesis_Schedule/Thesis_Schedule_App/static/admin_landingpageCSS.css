@@ -94,6 +94,7 @@ button[type=button]:hover {
   color: #fff;
   letter-spacing: 2px;
   background: linear-gradient(90deg,#7C55FF,#AD43FF)
+  transition: 2s;
 
 }
 
