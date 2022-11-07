@@ -1,12 +1,27 @@
 body{
     background-repeat: no-repeat;
     position: relative;
+    /*place-content: center;*/
     background-image:url(images/bg.png);
     background-size: cover;
+  /*  background-position: center;*/
     background-size:100% 100vh;
     font-family: monospace;
 }
-
+/*@mixin bg($url) {
+  background-attachment: fixed;
+  background-image: url(images/PERSON.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@mixin col($c, $m: 0px) {
+  $margin: calc(((12 / #{$c}) - 1) * #{$m});
+  width: calc(((100% - #{$margin}) / 12) * #{$c});
+  &:not(:last-child) {
+    margin: 0 #{$m} 0 0;
+  }*/
+}
 * {
   box-sizing: border-box;
   /*box-position: center;*/
@@ -17,7 +32,6 @@ body{
     box-sizing: inherit;
   }
 }
-
 html, body {
   font: 400 14px 'Didactic Gothic', sans-serif;
   height: 100%;
@@ -26,35 +40,33 @@ html, body {
   padding: 0;
   width: 100%;
 }
-
 a {
-  color: #fff;
+  color: #36065B;
   text-decoration: none;
   &:hover {
     text-decoration: underline;
   }
 }
-
 label {
   display: block;
-  margin-left: 15px;
-  position: absolute;
 }
 
 input {
   background: transparent;
-  border: 1px solid #000;
-  /*border-bottom: 1px solid rgba(213, 162, 249);
-  display: block;*/
+  border: none;
+  border-bottom: 1px solid rgba(213, 162, 249);
+  display: block;
   outline: none;
   padding: 0 8px 8px 5px;
   position: center;
-  text-transform: lowercase;
   transition: all 0.2s ease-in-out;
-  width: 70%;
+  width: 80%;
   &:focus {
-    border: #000;
+    border-bottom-color: #f3e2ff;
   }
+  /*&:hover {
+    border-bottom-color: #000;
+  }*/
 }
 
 .row {
@@ -70,7 +82,7 @@ input {
   border-radius: none;
   float: left;
   margin: 0;
-  padding-top: 200px;
+  padding: 30px 50px;
   position: center;
   &.col-6 {
     @include col(6);
@@ -86,6 +98,7 @@ input {
 .login-box {
   blackface-visibility: hidden;
   background: #fff;
+ /* background: rgba(255, 255, 255, 0.05);*/
   border-radius: 10px;
   margin-left: 50%;
   position: absolute;
@@ -93,12 +106,15 @@ input {
   transform:
     translate3d(-50%, -50%, 0)
     scale(1, 1);
-  max-width: 100%;
+  width: 120%;
+  max-width: 1000px;
 }
 .login-title {
    background-image: url(images/logo2.png);
    background-position: center;
    margin: 20px;
+   /*padding-right: 20px;
+   border-right: 3px solid rgba(213, 162, 249);*/
 
   background-repeat: no-repeat;
      width: 700px;
@@ -208,12 +224,71 @@ h1 {
   cursor: pointer;
   display: block;
   padding: 12px;
-  width: 50%;
+  width: 80%;
   border-radius: 3px;
   margin-top: 40px;
   margin-bottom: 60px;
 }
 
+}
 .lost-passwd {
+  /*margin-top: 50px;*/
   margin: 30px 0 0;
+}
+
+.input-container{
+  width: 80%;
+  position: relative;
+}
+.label{
+  position: absolute;
+  left: 10px;
+  top: 14px;
+  transition: all 0.2s;
+  padding: 0 2px;
+  z-index: 1;
+  color: #b3b3b3;
+  padding: 0 5px;
+}
+
+.text-input{
+  padding: 0.8rem;
+  width: 100%;
+  height: 100%;
+  border: 1.5px solid #9C9C9C;
+  background: #fff;
+  border-radius: 5px;
+  font-size: 15px;
+  outline: none;
+  transition: all .3s;
+  color: #000;
+}
+
+.label::before{
+  content: '';
+  height 3px;
+  background-color: #272530;
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 100%;
+  z-index: -5;
+}
+.text-input:focus{
+  border: 1.5px solid #9716FC;
+}
+.text-input:focus+.label,
+.filled{
+  top: -10px;
+  color: #fd7f0a;
+  font-size: 13px;
+}
+.text-input::placeholder {
+  font-size: 16px;
+  opacity: 0;
+  transition: all .3s;
+}
+.text-input:focus::placeholder{
+  opacity: 1;
+  animation-delay; 0.2s;
 }

@@ -9,7 +9,6 @@
     <script src="https://kit.fontawesome.com/eb44be992a.js" crossorigin="anonymous"></script>
 
 </head>
-
 {% load static %}
 <link rel = "stylesheet" href="{% static 'loginpage.css' %}">
 <body >
@@ -18,28 +17,38 @@
 
   </div>
   <div class="col login-form">
+    <div class="avatar">
+      <!-- <img src="https://cdn.iconscout.com/icon/free/png-512/avatar-370-456322.png" alt="" />-->
+    </div>
 
     <form action="" method="POST">
 
-        <label for="login" class="login"> USER ID
-        <input id="id" type="text" placeholder="enter user id" />
+        <label for="login" class="login">
+        <input id="id" type="text" placeholder="USER ID" />
         </label>
 
-      <label for="login" class="login"> USERNAME
-        <input id="login" type="text" placeholder="enter your username" />
+      <label for="login" class="login">
+        <input id="login" type="text" placeholder="USERNAME" />
       </label>
 
-      <label for="passwd" classs="passwd"> PASSWORD
-        <input id="passwd" type="password" placeholder="enter your password" />
+      <label for="passwd" classs="passwd">
+        <input id="passwd" type="password" placeholder="PASSWORD" />
       </label>
-        <a href="loginpage.html">
+
       <button class="button" type="submit"><i class="fa-solid fa-right-to-bracket"></i>  SIGN IN</button>
-        </a>
+
     </form>
 
     <div class="lost-passwd">
       <a href="#">Forgot password?</a>
     </div>
+      <form>
+
+	<div class="input-container">
+		<input type="text" id="username" autocomplete="off" placeholder="Enter your username" required class="text-input">
+	<label for="username" class="label"><i class="fa-regular fa-user"></i> USERNAME</label>
+	</div>
+      </form>
 
   </div>
 </div>

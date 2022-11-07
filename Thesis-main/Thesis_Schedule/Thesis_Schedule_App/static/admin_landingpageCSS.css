@@ -83,7 +83,6 @@ button{
 }
 
 button[type=button] {
-
   color: #969398;
   cursor: pointer;
   font-weight: bold;
@@ -93,9 +92,8 @@ button[type=button]:hover {
   font-weight: bold;
   color: #fff;
   letter-spacing: 2px;
-  background: linear-gradient(90deg,#7C55FF,#AD43FF)
-  transition: 2s;
-
+  /*background: linear-gradient(90deg,#7C55FF,#AD43FF)*/
+  background: #868686;
 }
 
 
