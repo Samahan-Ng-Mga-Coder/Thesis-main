@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-jzo^50d$lg_e(i=#u23e8l-b@$3@f(5(bjcim+243u)u-=+c6%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -76,12 +76,12 @@ WSGI_APPLICATION = 'Thesis_Schedule.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'railway',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'facultyloading',
         'USER': 'postgres',
-        'PASSWORD': 'mw9c8Yt19eMV0F65Nn8P',
-        'HOST': 'containers-us-west-78.railway.app',
-        'PORT': '6306',
+        'PASSWORD': 'admin',
+        'HOST': 'localhost',
+        'PORT': '5435',
     }
 }
 
