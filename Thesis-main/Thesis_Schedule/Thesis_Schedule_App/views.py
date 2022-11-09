@@ -17,3 +17,6 @@ def adminaddingUser(request):
 
     return render(
         request, 'Thesis_Schedule_App/Userinfo.html')
+
+    return render(request, 'Thesis_Schedule_App/admin_landingpage.html')
+
