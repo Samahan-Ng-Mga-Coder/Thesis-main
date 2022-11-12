@@ -14,7 +14,9 @@ def adminlogin(request):
 
 def adminAddingUser(request):
     # q = request.GET.get('q')
-    return render(request, 'Thesis_Schedule_App/user_info.html')
+    return render(request, 'Thesis_Schedule_App/Userinfo.html')
 
     #return render(request, 'Thesis_Schedule_App/admin_landingpage.html')
+
+
 

@@ -1,13 +1,18 @@
 body{
     
     position: relative;
-    /*place-content: center;*/
-    background-image:url(images/loginBg2.png);
-    background-repeat: no-repeat;
+   
+    background-image:url(images/bg.png);
+    background-repeat: repeat;
     background-size: cover;
     background-position: center;
-    /*background-size:100% 100vh;*/
-    font-family: monospace;
+    /*
+    place-content: center;
+    background-size:100% 100vh;
+    font-weight: bold;s
+    */
+    
+    
 }
 /*@mixin bg($url) {
   background-attachment: fixed;
