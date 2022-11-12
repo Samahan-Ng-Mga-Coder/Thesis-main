@@ -2,8 +2,8 @@ body{
     
     position: relative;
    
-    background-image:url(images/bg.png);
-    background-repeat: repeat;
+    background-image:url(images/bg1.png);
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     /*
