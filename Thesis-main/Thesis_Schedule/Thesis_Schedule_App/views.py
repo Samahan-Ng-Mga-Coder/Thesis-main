@@ -4,19 +4,17 @@ from django.http import HttpResponse
 
 # Create your views here.
 def login(request):
-    return render(request, 'Thesis_Schedule_App/loginpage.html')
+    return render(request, 'Thesis_Schedule_App/login_page.html')
 
 
 def adminlogin(request):
     # q = request.GET.get('q')
-
-    return render(
-        request, 'Thesis_Schedule_App/admin_landingpage.html')
-def adminaddingUser(request):
-    # q = request.GET.get('q')
-
-    return render(
-        request, 'Thesis_Schedule_App/Userinfo.html')
-
     return render(request, 'Thesis_Schedule_App/admin_landingpage.html')
+
+
+def adminAddingUser(request):
+    # q = request.GET.get('q')
+    return render(request, 'Thesis_Schedule_App/user_info.html')
+
+    #return render(request, 'Thesis_Schedule_App/admin_landingpage.html')
 
