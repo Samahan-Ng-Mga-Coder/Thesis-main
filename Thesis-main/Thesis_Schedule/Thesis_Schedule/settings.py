@@ -41,6 +41,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # Django REST framework
+   # 'rest_framework',
+    # CORS
+    #'corsheaders',
+
 ]
 
 MIDDLEWARE = [
@@ -83,9 +88,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'facultyloading',
         'USER': 'postgres',
-        'PASSWORD': '53421',
+        'PASSWORD': 'admin',
         'HOST': 'localhost',
-        'PORT': '5432',
+        'PORT': '5435',
     }
 }
 

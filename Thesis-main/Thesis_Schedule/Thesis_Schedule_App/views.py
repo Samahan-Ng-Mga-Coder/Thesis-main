@@ -4,11 +4,12 @@ from django.http import HttpResponse
 
 # Create your views here.
 def login(request):
-    return render(request, 'Thesis_Schedule_App/login_page.html')
 
+    return render(request, 'Registration/login_page.html')
 
 def adminlogin(request):
-    # q = request.GET.get('q')
+
+
     return render(request, 'Thesis_Schedule_App/admin_landingpage.html')
 
 
