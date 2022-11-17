@@ -1,5 +1,10 @@
+
 <!DOCTYPE html>
 
+{% block content %}
+
+
+<!--suppress XmlInvalidId -->
 <html>
 
 <head>
@@ -18,22 +23,26 @@
   <div class="col login-title">
   </div>
   <div class="col login-form">
+
+
     <div class="avatar">
       <!-- <img src="https://cdn.iconscout.com/icon/free/png-512/avatar-370-456322.png" alt="" />-->
     </div>
 
-    <form action="" method="POST">
+    <form action="{% url 'admin_landingpage' %}" method="POST">
 
-        <label for="login" class="login">
-        <input id="id" type="text" placeholder="USER ID" />
+        {% csrf_token %}
+
+        <label for="username" class="login">
+        <input type="text" class= "form-control" name="id" placeholder="USER ID" />
         </label>
 
-      <label for="login" class="login">
-        <input id="login" type="text" placeholder="USERNAME" />
+      <label for="username" class="login">
+        <input type="text" class= "form-control" name="username" placeholder="USERNAME" />
       </label>
 
-      <label for="passwd" classs="passwd">
-        <input id="passwd" type="password" placeholder="PASSWORD" />
+      <label for="password" classs="passwd">
+        <input type="password" class= "form-control" name="password" placeholder="PASSWORD" />
       </label>
 
       <button class="button" id= "btnSignIn" type="submit"> <i class="fa-solid fa-right-to-bracket"></i>  SIGN IN</button>
@@ -54,5 +63,5 @@
   </div>
 </div>
 </body>
-
+{% endblock content %}
 </html>
