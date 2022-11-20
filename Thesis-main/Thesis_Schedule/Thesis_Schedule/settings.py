@@ -90,9 +90,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'facultyloading',
         'USER': 'postgres',
-        'PASSWORD': 'admin',
+        'PASSWORD': '53421',
         'HOST': 'localhost',
-        'PORT': '5435',
+        'PORT': '5432',
     }
 }
 
