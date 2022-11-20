@@ -7,7 +7,6 @@ from django.shortcuts import render, redirect
 
 # Create your views here.
 
-
 def adminlogin(request):
     if request.method == "POST":
         username = request.POST['username']
