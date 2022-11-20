@@ -7,6 +7,7 @@ from django.shortcuts import render, redirect
 
 # Create your views here.
 
+<<<<<<< Updated upstream
 # def login(request):
 #
 #     if request.method == "POST":
@@ -28,6 +29,8 @@ from django.shortcuts import render, redirect
 #         return render(request, 'Registration/login_page.html')
 
 
+=======
+>>>>>>> Stashed changes
 def adminlogin(request):
     if request.method == "POST":
         username = request.POST['username']
