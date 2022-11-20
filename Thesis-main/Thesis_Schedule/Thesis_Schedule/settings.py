@@ -44,7 +44,9 @@ INSTALLED_APPS = [
     # Django REST framework
    # 'rest_framework',
     # CORS
-    #'corsheaders',
+    # 'corsheaders',
+    # 'corsheaders.middleware.CorsMiddleware',
+    # 'django.middleware.common.CommonMiddleware',
 
 ]
 
