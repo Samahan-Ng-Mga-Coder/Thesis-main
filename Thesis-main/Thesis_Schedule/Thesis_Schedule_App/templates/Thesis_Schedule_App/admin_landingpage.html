@@ -6,7 +6,7 @@
 <head>
   <meta charst="UTF-8">
 
-  <title> Drop Down Sidebar Menu | CodingLab </title>
+  <!--title> Drop Down Sidebar Menu | CodingLab </title-->
   <link rel="stylesheet" href="adminLandingPage_CSS.css">
 
   <!-- other embedded links>
@@ -31,9 +31,9 @@
 	<!--link rel="stylesheet" type="text/css" href="adminLandingPage_CSS.css"-->
 <body>
 
-<!------------------ code update ----------------->
+<!------------------ code update -----------------
 <header class="header"><i class="fa-solid fa-bars-staggered"></i> CICT DEPARTMENT TABLE</header>
-<!------------------------------------------------>
+<------------------------------------------------>
 
   <div class="sidebar close">
        {% if message %}
@@ -51,7 +51,7 @@
     <ul class="nav-links">
 
         <li>
-        <a href="#">
+        <a href="{% url 'homePage' %}">
           <i class="fa-solid fa-house-chimney"></i>
          <span class="link_name">HOME</span>
         </a>
@@ -140,7 +140,6 @@
 	<img src="{% static 'images/user.png' %}">
      </div>
 
-
      <div class="name-job">
         <div class="profile_name">Leo Marc Boco</div>
         <div class="job">Admin</div>
@@ -157,9 +156,9 @@
   </div>
 
 
-  <!--script>
+  <script>
 	let arrow = document.querySelectorAll(".arrow");
-	for (var i = 0; i < arrow.lenght; i++){
+	for (var i = 0; i < arrow.length; i++){
 	  arrow[i].addEventListener("click", (e)=>{
 
 	  let arrowParent = e.target.parentElement.parentElement;
@@ -167,7 +166,7 @@
 	  arrowParent.classList.toggle("showMenu");
 	  });
   	}
-  </script-->
+  </script>
 
 
 </body>

@@ -34,6 +34,9 @@ def classschedule(request):
 def logout(request):
     return render(request, 'Registration/login_page.html')
 
+def homePage(request):
+    return render(request, 'Thesis_Schedule_App/homePage.html')
+
 
 
 #

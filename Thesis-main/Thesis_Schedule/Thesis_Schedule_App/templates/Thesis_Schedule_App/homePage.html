@@ -1,0 +1,41 @@
+{% include 'Thesis_Schedule_App/admin_landingpage.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HOME PAGE | CLASS SCHEDULING SYSTEM</title>
+
+      <!-- box icon -->
+	    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	    <script src="https://kit.fontawesome.com/eb44be992a.js" crossorigin="anonymous"></script>
+
+	    <meta name="veiwport" content="width=device-width", initial-scale="1.0">
+</head>
+<!---------------------------- LOAD STATIC FOLDER ------------------------>
+        {% load static %}
+
+<!------------------ IMPORT CSS FILE FROM STATIC --------------->
+        <link rel = "stylesheet" href="{% static 'homePage_CSS.css' %}">
+
+<!------------------------------------------------------------------------>
+
+<body>
+<!-------------------------------- HEADER------------ -------------------->
+<header class="header"><i class="fa-solid fa-bars-staggered"></i> CICT DEPARTMENT </header>
+
+<!--------------------------- HOME | CONTENT ----------------------------->
+<div class="home-content">
+  <div class="title-logo">
+      <img src="{% static 'images/home_folder/project_logo.png' %}">
+     <!--img src="project_logo.png" alt="profile"-->
+      <h2 style="font-size:20px;">
+         PREDICTIVE ANALYTICS USING GENETICS AND BEST-FIT
+         ALGORITHM ON CLASS SCHEDULING SYSTEM AND FACULTY
+         LOADING SYSTEM
+     </h2>
+  </div>
+</div>
+<!------------------------------------------------------------------------>
+
+</body>
+</html>
