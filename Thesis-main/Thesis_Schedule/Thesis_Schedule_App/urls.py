@@ -7,6 +7,7 @@ urlpatterns = [
     path('admin_landingpage', views.adminlogin, name='admin_landingpage'),
     path('facultyloading', views.facultyloading, name='facultyloading'),
     path('classschedule', views.classschedule, name='classschedule'),
+    path('homePage', views.homePage, name='homePage'),
 
     #path('Userinfo/', views.adminAddingUser, name='Userinfo'),
 
