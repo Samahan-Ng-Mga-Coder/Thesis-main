@@ -31,10 +31,6 @@
 	<!--link rel="stylesheet" type="text/css" href="adminLandingPage_CSS.css"-->
 <body>
 
-<!------------------ code update -----------------
-<header class="header"><i class="fa-solid fa-bars-staggered"></i> CICT DEPARTMENT TABLE</header>
-<------------------------------------------------>
-
   <div class="sidebar close">
        {% if message %}
             {% for message in messages %}
@@ -104,7 +100,7 @@
      </li>
 
      <li>
-      <a href="#">
+      <a href="{% url 'classschedule' %}">
        <i class="fa-solid fa-calendar-days"></i>
        <span class="link_name">CLASS SCHEDULE</span>
       </a>
