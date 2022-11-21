@@ -28,6 +28,9 @@ def adminlogin(request):
 def facultyloading(request):
     return render(request, "Thesis_Schedule_App/facultyloading_page.html")
 
+def classschedule(request):
+    return render(request, "Thesis_Schedule_App/classscheduling_page.html")
+
 def logout(request):
     return render(request, 'Registration/login_page.html')
 
