@@ -31,6 +31,7 @@
 	<!--link rel="stylesheet" type="text/css" href="adminLandingPage_CSS.css"-->
 <body>
 
+
 <!------------------ code update ----------------->
 <header class="header"></header>
 
@@ -39,6 +40,7 @@
   <h2> im a text </h2>
 </div>
 <!------------------------------------------------------------------------>
+
 
   <div class="sidebar close">
        {% if message %}
@@ -109,7 +111,7 @@
      </li>
 
      <li>
-      <a href="#">
+      <a href="{% url 'classschedule' %}">
        <i class="fa-solid fa-calendar-days"></i>
        <span class="link_name">CLASS SCHEDULE</span>
       </a>
