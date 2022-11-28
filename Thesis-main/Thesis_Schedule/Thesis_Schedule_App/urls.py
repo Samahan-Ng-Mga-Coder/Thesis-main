@@ -8,6 +8,10 @@ urlpatterns = [
     path('facultyloading', views.facultyloading, name='facultyloading'),
     path('classschedule', views.classschedule, name='classschedule'),
     path('homePage', views.homePage, name='homePage'),
+    #PROFESSOR PATH
+    path('AddProfessor', views.AddProfessor, name='AddProfessor'),
+    path('ProfessorList', views.ProfessorList, name='ProfessorList'),
+
 
     #path('Userinfo/', views.adminAddingUser, name='Userinfo'),
 

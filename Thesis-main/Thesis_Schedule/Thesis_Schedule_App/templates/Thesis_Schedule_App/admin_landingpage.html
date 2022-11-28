@@ -1,5 +1,5 @@
-{% load static %}
 <!DOCTYPE html>
+{% load static %}
 
 <html lang="en" dir="ltr">
 
@@ -8,6 +8,8 @@
 
   <!--title> Drop Down Sidebar Menu | CodingLab </title-->
   <link rel="stylesheet" href="adminLandingPage_CSS.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Convergence&family=Lato:wght@300;400;700;900&family=Mukta:wght@300;400;600;700;800&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
 
   <!-- other embedded links>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -36,13 +38,13 @@
 <header class="header"></header>
 
 <!--------------------------- HOME | CONTENT ----------------------------->
-<div class="content-body">
-  <h2> im a text </h2>
-</div>
+<!--<div class="content-body">-->
+<!--  <h2> im a text </h2>-->
+<!--</div>-->
 <!------------------------------------------------------------------------>
 
-
   <div class="sidebar close">
+
        {% if message %}
             {% for message in messages %}
                 {{ message }}
@@ -56,7 +58,7 @@
     </div>
 
     <ul class="nav-links">
-
+         {% csrf_token %}
         <li>
         <a href="{% url 'homePage' %}">
           <i class="fa-solid fa-house-chimney"></i>
@@ -67,9 +69,9 @@
         </ul-->
       </li>
 
-     <li>
+     <li >
       <a href="{% url 'facultyloading' %}">
-          {% csrf_token %}
+
        <i class="fa-solid fa-chalkboard-user"></i>
        <span class="link_name">FACULTY LOADING</span>
       </a>
@@ -88,8 +90,13 @@
       </div>
       <ul class="sub-menu">
         <!--li><a class="link_name" href="#">PROFESSOR INFO</a></li-->
-        <li><a href="#"><!--i class="fa-solid fa-list-ul"></i-->Professor list</a></li>
-        <li><a href="#">Add professor</a></li>
+        <li>
+          <a href="{% url 'ProfessorList' %}"><!--i class="fa-solid fa-list-ul"></i-->Professor list</a>
+        </li>
+        <li>
+            <a href="{% url 'AddProfessor' %}">Add professor</a>
+        </li>
+
       </ul>
      </li>
 
@@ -174,7 +181,9 @@
 	  });
   	}
   </script>
+{% block content %}
 
+{% endblock content %}
 
 </body>
 </html>
