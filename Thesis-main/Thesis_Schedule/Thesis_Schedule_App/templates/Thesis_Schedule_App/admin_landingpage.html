@@ -7,9 +7,11 @@
   <meta charst="UTF-8">
 
   <!--title> Drop Down Sidebar Menu | CodingLab </title-->
+
   <link rel="stylesheet" href="adminLandingPage_CSS.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Convergence&family=Lato:wght@300;400;700;900&family=Mukta:wght@300;400;600;700;800&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+
 
   <!-- other embedded links>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -28,20 +30,20 @@
 
     {% load static %}
 <link rel = "stylesheet" href="{% static 'adminLandingPage_CSS.css' %}">
-
+<!--link rel="stylesheet" href="adminLandingPage_CSS.css"-->
 
 	<!--link rel="stylesheet" type="text/css" href="adminLandingPage_CSS.css"-->
 <body>
 
+<!------------------ CONTENT LAYOUT ----------------->
+  <header class="header"></header>
+  <!--aside class="sidebar">Sidebar</aside->
+  <main class="main">Main</main-->
+  
+<!--------------------------------------------------->
 
-<!------------------ code update ----------------->
-<header class="header"></header>
 
-<!--------------------------- HOME | CONTENT ----------------------------->
-<!--<div class="content-body">-->
-<!--  <h2> im a text </h2>-->
-<!--</div>-->
-<!------------------------------------------------------------------------>
+
 
   <div class="sidebar close">
 
@@ -90,6 +92,7 @@
       </div>
       <ul class="sub-menu">
         <!--li><a class="link_name" href="#">PROFESSOR INFO</a></li-->
+
         <li>
           <a href="{% url 'ProfessorList' %}"><!--i class="fa-solid fa-list-ul"></i-->Professor list</a>
         </li>
@@ -112,7 +115,7 @@
         <!--li><a class="link_name" href="#">STUDENT INFO</a></li-->
         <li><a href="#">First Year</a></li>
         <li><a href="#">Second Year</a></li>
-	<li><a href="#">Third Year</a></li>
+	      <li><a href="#">Third Year</a></li>
         <li><a href="#">Fourth Year</a></li>
       </ul>
      </li>
@@ -170,7 +173,7 @@
   </div>
 
 
-  <script>
+  <!--script>
 	let arrow = document.querySelectorAll(".arrow");
 	for (var i = 0; i < arrow.length; i++){
 	  arrow[i].addEventListener("click", (e)=>{
@@ -180,8 +183,9 @@
 	  arrowParent.classList.toggle("showMenu");
 	  });
   	}
-  </script>
+
 {% block content %}
+
 
 {% endblock content %}
 
